@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    background-color: hsl(217, 19%, 24%);
+    height: 100vh;
+}
+
+h1 {
+    color:  hsl(150, 100%, 66%);
+    text-align: center;
+    font-size: 18px;
+}
+ 
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 520px;
+    min-height: 310px;
+    height: auto;
+    margin: 20px;
+    background-color: hsl(216, 11%, 54%);
+    background-image: url(images/pattern-divider-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    background-size: 90%;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative; 
+}
+
+.advice-text {
+    color:hsl(193, 38%, 86%);
+    text-align: center;
+    font-size: 28px;
+    word-wrap: break-word;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.dice {
+    width:55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;    
+}
+
+.dice:hover {
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+
+.ball {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* media queries */
+@media screen and (min-width:320px) and (max-width:425px) {
+    .card {
+        background-image: url(images/pattern-divider-mobile.svg);
+    }
+
+    .advice-text {
+        font-size: 18px;
+    }
+}
