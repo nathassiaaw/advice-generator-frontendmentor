@@ -14,7 +14,6 @@ h1 {
 }
  
 .container {
-    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -28,7 +27,7 @@ h1 {
     min-height: 310px;
     height: auto;
     margin: 20px;
-    background-color: hsl(216, 11%, 54%);
+    background-color: hsl(216, 17%, 37%);
     background-image: url(images/pattern-divider-desktop.svg);
     background-repeat: no-repeat;
     background-position: 50% 80%;
@@ -48,8 +47,8 @@ h1 {
 }
 
 .dice {
-    width:55px;
-    height: 55px;
+    width:65px;
+    height: 65px;
     border-radius: 50%;
     background-color: hsl(150, 100%, 66%);
     position: absolute;
